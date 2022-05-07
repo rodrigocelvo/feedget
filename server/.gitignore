@@ -1,6 +1,7 @@
 node_modules
 .env
 coverage
+dist
 
 */dev.db
 README.md
