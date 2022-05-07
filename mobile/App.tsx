@@ -1,14 +1,22 @@
 import "react-native-gesture-handler";
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs([
+  "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
+]);
 
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, KeyboardAvoidingView, Platform } from "react-native";
+
 import { theme } from "./src/theme";
 
-import { useFonts } from "expo-font";
-
-import { Inter_400Regular, Inter_500Medium } from "@expo-google-fonts/inter";
-
 import AppLoading from "expo-app-loading";
+import {
+  useFonts,
+  Inter_400Regular,
+  Inter_500Medium,
+} from "@expo-google-fonts/inter";
+
 import Widget from "./src/components/Widget";
 
 export default function App() {
@@ -22,11 +30,13 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
       <StatusBar style="light" backgroundColor="transparent" translucent />
       <Widget />
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
