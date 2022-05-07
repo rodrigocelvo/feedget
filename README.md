@@ -1,7 +1,7 @@
 ![cover](.github/cover.png?style=flat)
 
 <div align="center">
-  <a href="https://nlw-return-feedget-web.vercel.app/">Testar Aplicalção</a>
+  <a href="https://nlw-return-feedget-web.vercel.app/">Testar Aplicação</a>
 </div>
 
 # 💻 Projeto
@@ -22,7 +22,7 @@ Um Componente de Widget para feedback que pode ser utilizado em qualquer projeto
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1102912516166573468). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
-# Executando o projeto
+# 🚀 Executando o projeto
 
 Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
 Em seguida, inicie o projeto.
